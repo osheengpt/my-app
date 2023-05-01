@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header);
+}
+
+.logo img {
+    object-fit: cover;
+    width: 40%;
+}
+
+.header-menu {
+    margin-right: 10px;
+    border-left: 1px solid var(--light);
+    display: flex;
+}
+
+.header-menu a{
+    color: var(--light);
+    font-family: sans-serif;
+    padding: 20px 30px;
+    font-size: 20px;
+}

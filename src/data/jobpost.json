@@ -1,0 +1,752 @@
+[
+    {
+        "company": "Harris",
+        "position": "Customer Communications Manager",
+        "salary": 3370,
+        "postedOn": "7 Jun 2022",
+        "skills": [
+            "JavaScript",
+            "Ruby",
+            "Ruby",
+            "Ruby"
+        ],
+        "location": "8899 Kallie Streets"
+    },
+    {
+        "company": "Momentive Performance Materials",
+        "position": "Product Accounts Architect",
+        "salary": 17719,
+        "postedOn": "30 Oct 2022",
+        "skills": [
+            "Python",
+            "SQL",
+            "SQL",
+            "C++"
+        ],
+        "location": "236 Providenci Drive"
+    },
+    {
+        "company": "AutoNation",
+        "position": "Customer Solutions Representative",
+        "salary": 25838,
+        "postedOn": "26 Mar 2023",
+        "skills": [
+            "SQL",
+            "C++",
+            "AWS",
+            "JavaScript",
+            "C++"
+        ],
+        "location": "36309 Morissette Corners"
+    },
+    {
+        "company": "MSC Industrial Direct",
+        "position": "Central Solutions Producer",
+        "salary": 3686,
+        "postedOn": "10 May 2022",
+        "skills": [
+            "AWS",
+            "Ruby",
+            "Ruby",
+            "C++",
+            "C++"
+        ],
+        "location": "9494 Bins Pike"
+    },
+    {
+        "company": "Ingles Markets",
+        "position": "Principal Configuration Representative",
+        "salary": 22186,
+        "postedOn": "9 Feb 2022",
+        "skills": [
+            "Ruby",
+            "AWS",
+            "AWS",
+            "Ruby",
+            "C++",
+            "SQL"
+        ],
+        "location": "49774 Carter Stream"
+    },
+    {
+        "company": "Lansing Trade Group",
+        "position": "Lead Web Facilitator",
+        "salary": 17627,
+        "postedOn": "19 Dec 2022",
+        "skills": [
+            "JavaScript",
+            "Python",
+            "AWS",
+            "JavaScript",
+            "Ruby"
+        ],
+        "location": "4856 Cassandra Flat"
+    },
+    {
+        "company": "Albemarle",
+        "position": "Chief Implementation Engineer",
+        "salary": 23644,
+        "postedOn": "16 Jan 2022",
+        "skills": [
+            "Python",
+            "JavaScript",
+            "Python"
+        ],
+        "location": "5493 Olaf Viaduct"
+    },
+    {
+        "company": "Applied Industrial Technologies",
+        "position": "Chief Research Producer",
+        "salary": 8595,
+        "postedOn": "25 Mar 2022",
+        "skills": [
+            "C++",
+            "AWS"
+        ],
+        "location": "589 Brakus Forges"
+    },
+    {
+        "company": "BorgWarner",
+        "position": "Regional Brand Associate",
+        "salary": 25846,
+        "postedOn": "21 Feb 2023",
+        "skills": [
+            "AWS",
+            "JavaScript",
+            "C++",
+            "SQL",
+            "Python",
+            "Ruby"
+        ],
+        "location": "917 Wilkinson Ridge"
+    },
+    {
+        "company": "Qualcomm",
+        "position": "Dynamic Intranet Supervisor",
+        "salary": 2945,
+        "postedOn": "29 Aug 2022",
+        "skills": [
+            "C++",
+            "Python",
+            "C++"
+        ],
+        "location": "3144 Kuvalis Hollow"
+    },
+    {
+        "company": "Jones Lang LaSalle",
+        "position": "Lead Data Manager",
+        "salary": 21434,
+        "postedOn": "18 Feb 2022",
+        "skills": [
+            "C++",
+            "JavaScript",
+            "SQL"
+        ],
+        "location": "88845 Bauch Common"
+    },
+    {
+        "company": "Amkor Technology",
+        "position": "Regional Solutions Planner",
+        "salary": 13910,
+        "postedOn": "15 Dec 2022",
+        "skills": [
+            "JavaScript",
+            "Python",
+            "C++",
+            "C++",
+            "AWS",
+            "C++"
+        ],
+        "location": "024 Howell Curve"
+    },
+    {
+        "company": "Emerson Electric",
+        "position": "Dynamic Brand Associate",
+        "salary": 28753,
+        "postedOn": "10 Jan 2023",
+        "skills": [
+            "Python",
+            "SQL",
+            "JavaScript"
+        ],
+        "location": "88370 Daugherty Ville"
+    },
+    {
+        "company": "Markel",
+        "position": "Investor Mobility Executive",
+        "salary": 18563,
+        "postedOn": "7 Mar 2022",
+        "skills": [
+            "Ruby",
+            "SQL",
+            "Ruby"
+        ],
+        "location": "77680 Zboncak Prairie"
+    },
+    {
+        "company": "GNC Holdings",
+        "position": "Investor Brand Agent",
+        "salary": 10103,
+        "postedOn": "17 Aug 2022",
+        "skills": [
+            "Python",
+            "C++",
+            "C++"
+        ],
+        "location": "266 Kozey Corners"
+    },
+    {
+        "company": "Texas Instruments",
+        "position": "District Web Executive",
+        "salary": 7955,
+        "postedOn": "12 May 2022",
+        "skills": [
+            "JavaScript",
+            "C++",
+            "C++"
+        ],
+        "location": "0455 Conroy Circle"
+    },
+    {
+        "company": "Walgreens",
+        "position": "Principal Identity Facilitator",
+        "salary": 26392,
+        "postedOn": "17 Feb 2022",
+        "skills": [
+            "C++",
+            "Ruby",
+            "Python",
+            "C++",
+            "Ruby"
+        ],
+        "location": "8234 Borer Hills"
+    },
+    {
+        "company": "Freddie Mac",
+        "position": "Senior Markets Associate",
+        "salary": 14759,
+        "postedOn": "7 Apr 2022",
+        "skills": [
+            "SQL",
+            "Python",
+            "JavaScript",
+            "Ruby"
+        ],
+        "location": "910 Queen Extensions"
+    },
+    {
+        "company": "DTE Energy",
+        "position": "Regional Research Strategist",
+        "salary": 12796,
+        "postedOn": "25 Jul 2022",
+        "skills": [
+            "Ruby",
+            "C++",
+            "AWS",
+            "C++",
+            "Ruby",
+            "AWS"
+        ],
+        "location": "50898 Leola Summit"
+    },
+    {
+        "company": "Concho Resources",
+        "position": "District Factors Agent",
+        "salary": 3198,
+        "postedOn": "4 Sep 2022",
+        "skills": [
+            "Python",
+            "JavaScript",
+            "SQL"
+        ],
+        "location": "272 Alphonso Centers"
+    },
+    {
+        "company": "FMC",
+        "position": "District Response Assistant",
+        "salary": 11765,
+        "postedOn": "16 Apr 2022",
+        "skills": [
+            "Python",
+            "C++",
+            "Python",
+            "Python",
+            "JavaScript"
+        ],
+        "location": "7227 Keven Rapid"
+    },
+    {
+        "company": "TreeHouse Foods",
+        "position": "Customer Group Facilitator",
+        "salary": 6707,
+        "postedOn": "18 Sep 2022",
+        "skills": [
+            "AWS",
+            "AWS",
+            "C++",
+            "Python",
+            "JavaScript",
+            "C++"
+        ],
+        "location": "3115 Jerome Plain"
+    },
+    {
+        "company": "D.R. Horton",
+        "position": "Direct Research Director",
+        "salary": 14655,
+        "postedOn": "23 Dec 2022",
+        "skills": [
+            "Python",
+            "AWS"
+        ],
+        "location": "3100 Peggie Station"
+    },
+    {
+        "company": "Towers Watson",
+        "position": "District Implementation Manager",
+        "salary": 13231,
+        "postedOn": "14 Feb 2022",
+        "skills": [
+            "AWS",
+            "Ruby",
+            "Python",
+            "Ruby"
+        ],
+        "location": "59772 Skiles Turnpike"
+    },
+    {
+        "company": "Health Net",
+        "position": "Customer Markets Assistant",
+        "salary": 10762,
+        "postedOn": "17 Jan 2022",
+        "skills": [
+            "Ruby"
+        ],
+        "location": "22090 Weimann Plaza"
+    },
+    {
+        "company": "Darden Restaurants",
+        "position": "Corporate Paradigm Assistant",
+        "salary": 28444,
+        "postedOn": "5 Sep 2022",
+        "skills": [
+            "SQL",
+            "JavaScript",
+            "C++"
+        ],
+        "location": "41957 Constance Court"
+    },
+    {
+        "company": "Hasbro",
+        "position": "Legacy Branding Specialist",
+        "salary": 3708,
+        "postedOn": "24 Jul 2022",
+        "skills": [
+            "JavaScript",
+            "JavaScript",
+            "C++",
+            "AWS"
+        ],
+        "location": "604 Carlie Neck"
+    },
+    {
+        "company": "VF",
+        "position": "Dynamic Brand Architect",
+        "salary": 10460,
+        "postedOn": "17 Mar 2023",
+        "skills": [
+            "C++",
+            "JavaScript",
+            "JavaScript",
+            "JavaScript"
+        ],
+        "location": "878 Freddie Locks"
+    },
+    {
+        "company": "Church & Dwight",
+        "position": "Corporate Infrastructure Executive",
+        "salary": 24509,
+        "postedOn": "31 Jan 2023",
+        "skills": [
+            "JavaScript",
+            "Python"
+        ],
+        "location": "16960 Julianne Gateway"
+    },
+    {
+        "company": "TrueBlue",
+        "position": "Investor Optimization Orchestrator",
+        "salary": 6903,
+        "postedOn": "13 Jan 2022",
+        "skills": [
+            "SQL",
+            "AWS",
+            "SQL",
+            "SQL",
+            "Ruby",
+            "Ruby"
+        ],
+        "location": "960 Carolyne Plains"
+    },
+    {
+        "company": "J.Crew Group",
+        "position": "Investor Implementation Liaison",
+        "salary": 27615,
+        "postedOn": "8 Mar 2022",
+        "skills": [
+            "JavaScript",
+            "AWS",
+            "Python",
+            "SQL",
+            "SQL",
+            "JavaScript"
+        ],
+        "location": "72562 Amira Port"
+    },
+    {
+        "company": "Liberty Interactive",
+        "position": "Corporate Mobility Consultant",
+        "salary": 7371,
+        "postedOn": "26 Jul 2022",
+        "skills": [
+            "Python",
+            "Ruby",
+            "SQL",
+            "Ruby"
+        ],
+        "location": "33099 Domenico Causeway"
+    },
+    {
+        "company": "Ashland",
+        "position": "Internal Tactics Specialist",
+        "salary": 5170,
+        "postedOn": "11 Apr 2022",
+        "skills": [
+            "C++",
+            "Python",
+            "Python"
+        ],
+        "location": "22765 Hansen Flats"
+    },
+    {
+        "company": "Wendy's",
+        "position": "Regional Operations Designer",
+        "salary": 24214,
+        "postedOn": "8 Feb 2023",
+        "skills": [
+            "JavaScript",
+            "Python",
+            "Ruby",
+            "JavaScript",
+            "JavaScript",
+            "C++"
+        ],
+        "location": "3121 Tyrique Trail"
+    },
+    {
+        "company": "Meritage Homes",
+        "position": "Investor Interactions Director",
+        "salary": 2984,
+        "postedOn": "7 Jun 2022",
+        "skills": [
+            "Python",
+            "SQL",
+            "JavaScript",
+            "Python"
+        ],
+        "location": "1084 Mitchell Causeway"
+    },
+    {
+        "company": "Pitney Bowes",
+        "position": "Legacy Branding Administrator",
+        "salary": 15237,
+        "postedOn": "24 Feb 2022",
+        "skills": [
+            "SQL",
+            "AWS",
+            "JavaScript"
+        ],
+        "location": "00472 Oliver Park"
+    },
+    {
+        "company": "Henry Schein",
+        "position": "Dynamic Configuration Administrator",
+        "salary": 13939,
+        "postedOn": "2 Dec 2022",
+        "skills": [
+            "C++",
+            "C++",
+            "C++",
+            "JavaScript",
+            "SQL",
+            "JavaScript"
+        ],
+        "location": "47770 VonRueden Hill"
+    },
+    {
+        "company": "RPC",
+        "position": "Forward Functionality Architect",
+        "salary": 20989,
+        "postedOn": "14 May 2022",
+        "skills": [
+            "SQL",
+            "JavaScript"
+        ],
+        "location": "442 Corrine Light"
+    },
+    {
+        "company": "Lear",
+        "position": "Regional Identity Consultant",
+        "salary": 7007,
+        "postedOn": "16 Jul 2022",
+        "skills": [
+            "C++"
+        ],
+        "location": "87124 Bogisich Extensions"
+    },
+    {
+        "company": "Sanderson Farms",
+        "position": "Global Group Technician",
+        "salary": 18311,
+        "postedOn": "23 Feb 2023",
+        "skills": [
+            "SQL",
+            "AWS",
+            "AWS",
+            "C++",
+            "C++"
+        ],
+        "location": "2991 Berneice Forest"
+    },
+    {
+        "company": "TD Ameritrade Holding",
+        "position": "Dynamic Metrics Liaison",
+        "salary": 22878,
+        "postedOn": "28 Jun 2022",
+        "skills": [
+            "Ruby",
+            "Python",
+            "AWS"
+        ],
+        "location": "43885 Hirthe Trace"
+    },
+    {
+        "company": "Berkshire Hathaway",
+        "position": "Human Paradigm Producer",
+        "salary": 4996,
+        "postedOn": "25 Dec 2022",
+        "skills": [
+            "JavaScript",
+            "SQL",
+            "SQL",
+            "AWS"
+        ],
+        "location": "65930 Akeem Neck"
+    },
+    {
+        "company": "TreeHouse Foods",
+        "position": "Lead Functionality Designer",
+        "salary": 18161,
+        "postedOn": "8 Jun 2022",
+        "skills": [
+            "Ruby",
+            "C++",
+            "JavaScript",
+            "Ruby",
+            "SQL",
+            "Ruby"
+        ],
+        "location": "105 Graham Brook"
+    },
+    {
+        "company": "Alliance Data Systems",
+        "position": "Lead Usability Developer",
+        "salary": 18811,
+        "postedOn": "15 Jan 2022",
+        "skills": [
+            "C++",
+            "JavaScript",
+            "SQL",
+            "Python"
+        ],
+        "location": "995 Volkman Estate"
+    },
+    {
+        "company": "United Refining",
+        "position": "Dynamic Branding Architect",
+        "salary": 2449,
+        "postedOn": "3 Sep 2022",
+        "skills": [
+            "SQL"
+        ],
+        "location": "45110 Walter Terrace"
+    },
+    {
+        "company": "ArcBest",
+        "position": "Chief Response Developer",
+        "salary": 26118,
+        "postedOn": "19 Mar 2023",
+        "skills": [
+            "Ruby",
+            "Python",
+            "AWS",
+            "SQL"
+        ],
+        "location": "404 Ellen Village"
+    },
+    {
+        "company": "Swift Transportation",
+        "position": "Legacy Infrastructure Director",
+        "salary": 28995,
+        "postedOn": "7 Jan 2022",
+        "skills": [
+            "AWS",
+            "Ruby",
+            "Python",
+            "Python",
+            "C++",
+            "AWS"
+        ],
+        "location": "65302 Percy Row"
+    },
+    {
+        "company": "Baxter International",
+        "position": "Product Research Designer",
+        "salary": 8648,
+        "postedOn": "26 Aug 2022",
+        "skills": [
+            "Python",
+            "SQL",
+            "Ruby",
+            "SQL"
+        ],
+        "location": "525 Schimmel Roads"
+    },
+    {
+        "company": "TravelCenters of America",
+        "position": "Lead Paradigm Liaison",
+        "salary": 28493,
+        "postedOn": "13 Jan 2023",
+        "skills": [
+            "AWS",
+            "SQL",
+            "SQL",
+            "AWS",
+            "AWS"
+        ],
+        "location": "44163 Hodkiewicz Freeway"
+    },
+    {
+        "company": "Towers Watson",
+        "position": "Customer Program Agent",
+        "salary": 4022,
+        "postedOn": "23 Mar 2022",
+        "skills": [
+            "JavaScript",
+            "JavaScript",
+            "JavaScript",
+            "AWS"
+        ],
+        "location": "26482 Brad Underpass"
+    },
+    {
+        "company": "KBR",
+        "position": "Dynamic Marketing Officer",
+        "salary": 25941,
+        "postedOn": "22 Apr 2023",
+        "skills": [
+            "AWS",
+            "Python",
+            "JavaScript",
+            "JavaScript"
+        ],
+        "location": "0251 Robel Points"
+    },
+    {
+        "company": "Nexeo Solutions Holdings",
+        "position": "Forward Division Associate",
+        "salary": 19464,
+        "postedOn": "4 Apr 2023",
+        "skills": [
+            "Python",
+            "JavaScript"
+        ],
+        "location": "3883 Oliver View"
+    },
+    {
+        "company": "Superior Energy Services",
+        "position": "Internal Response Officer",
+        "salary": 15106,
+        "postedOn": "10 Jul 2022",
+        "skills": [
+            "Python",
+            "Ruby"
+        ],
+        "location": "3662 Destiny Light"
+    },
+    {
+        "company": "Consol Energy",
+        "position": "Direct Metrics Strategist",
+        "salary": 24478,
+        "postedOn": "23 Mar 2022",
+        "skills": [
+            "SQL",
+            "Python",
+            "SQL",
+            "C++",
+            "SQL"
+        ],
+        "location": "8965 Walsh Villages"
+    },
+    {
+        "company": "Hilton Worldwide Holdings",
+        "position": "Direct Brand Planner",
+        "salary": 19588,
+        "postedOn": "9 Apr 2022",
+        "skills": [
+            "JavaScript",
+            "Ruby",
+            "C++",
+            "Ruby",
+            "SQL",
+            "C++"
+        ],
+        "location": "594 Aric Cliffs"
+    },
+    {
+        "company": "Community Health Systems",
+        "position": "Principal Factors Consultant",
+        "salary": 6972,
+        "postedOn": "14 Nov 2022",
+        "skills": [
+            "AWS",
+            "C++"
+        ],
+        "location": "460 Wunsch Forks"
+    },
+    {
+        "company": "EMCOR Group",
+        "position": "Corporate Branding Officer",
+        "salary": 22938,
+        "postedOn": "5 Aug 2022",
+        "skills": [
+            "Python",
+            "C++",
+            "AWS"
+        ],
+        "location": "2491 Boyer Skyway"
+    },
+    {
+        "company": "Darling Ingredients",
+        "position": "Investor Intranet Administrator",
+        "salary": 15776,
+        "postedOn": "26 Jan 2022",
+        "skills": [
+            "JavaScript",
+            "Ruby",
+            "JavaScript",
+            "Python"
+        ],
+        "location": "4863 Rolfson Spring"
+    }
+]
