@@ -1,0 +1,35 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 30px;
+    border-top: 1px solid var(--light-shadow);
+}
+
+.pagination > button{
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+    width: 42px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--light-gray);
+}
+
+.pagination > button:hover{
+    background-color: var(--light-shadow);
+}
+
+.pagination .active{
+    background-color: var(--primary);
+}
+
+.arrow{
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    border: 1px dashed var(--dark);
+}

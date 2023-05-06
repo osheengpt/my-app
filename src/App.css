@@ -3,10 +3,15 @@
     --header: #343434;
     --secondary: #d20e0e;
     --shadow: #80808085;
+    --light-shadow: #8080805c;
+    --light-gray:#80808030;
     --hover: #2196F3;
     --text: #000000d9;
     --text-size: 1.125rem;
     --light: #ffffff;
     --dark: #000000;
     --red: #ffb1b1d1;
+    --green: #34a239;
+    --light-red: #ef6363;
+    --bg-blur: #808080a3;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import ErrorMessage from "../components/ErrorMessage";
+import ErrorMessage from "../common/ErrorMessage";
 
 const useErrorHandler = () => {
   const [error, setError] = React.useState(null);

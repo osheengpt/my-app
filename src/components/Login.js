@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { USER_TYPE } from "../utils/consts";
 import { useAuthContext, useErrorHandler } from "../hooks";
+import { validateLoginForm } from "../utils/helper";
 import "./Login.css";
 
 const Login = () => {
@@ -15,17 +16,21 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const user = {
-      email: userEmail,
-      password: userPassword,
-      type: userType,
-    };
-    if (isValidUser(user)) {
-      navigate("/");
-    } else {
-      setUserEmail("");
-      setUserPassword("");
-      setError("Wrong credentials!");
+    if (validateLoginForm(userEmail, userPassword, setError)) {
+      const user = {
+        email: userEmail,
+        password: userPassword,
+        type: userType,
+      };
+      if (isValidUser(user)) {
+        user.type === USER_TYPE.FREELANCER
+          ? navigate("/freelancer")
+          : navigate("/employer");
+      } else {
+        setUserEmail("");
+        setUserPassword("");
+        setError("Wrong credentials.");
+      }
     }
   };
 

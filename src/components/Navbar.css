@@ -8,7 +8,9 @@
 
 .logo img {
     object-fit: cover;
-    width: 40%;
+    width: 215px;
+    margin-left: 32px;
+    margin-top: 50px;
 }
 
 .header-menu {

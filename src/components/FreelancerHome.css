@@ -1,0 +1,19 @@
+.layout{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.posts-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 20px;
+    border: 1px solid var(--shadow);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px var(--light-shadow);
+}
+
+.posts-grid.center{
+    grid-template-columns: auto;
+}

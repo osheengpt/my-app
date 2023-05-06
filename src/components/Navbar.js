@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../hooks";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo1.png";
 import "./Navbar.css";
 
 function Navbar() {
-  const { auth } = useAuthContext();
+  const { auth, removeUserAuth } = useAuthContext();
 
   return (
     <section className="navbar">
@@ -15,9 +15,11 @@ function Navbar() {
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
-        {!auth && (
+        {auth && (
           <div className="header-menu">
-            <Link to="/login">Login</Link>
+            <Link to="/login" onClick={removeUserAuth}>
+              Logout
+            </Link>
           </div>
         )}
       </div>
