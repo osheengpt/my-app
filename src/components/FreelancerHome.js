@@ -10,6 +10,9 @@ import "./FreelancerHome.css";
 const Home = () => {
   const [posts, setPosts] = React.useState([]);
   const [selectedSkills, setSelectedSkills] = React.useState([]);
+  const [selectedSalaryRange, setSelectedSalaryRange] = React.useState([
+    0, 50000,
+  ]);
   const [page, setPage] = React.useState(1);
   const [total, setTotal] = React.useState(0);
   const { loading, setLoading, showLoader } = useLoadingHandler();
@@ -17,7 +20,7 @@ const Home = () => {
 
   React.useEffect(() => {
     setLoading(true);
-    getJobs(page, selectedSkills)
+    getJobs(page, selectedSkills, selectedSalaryRange)
       .then((res) => {
         setTotal(res.total);
         setPosts(res.data);
@@ -26,7 +29,7 @@ const Home = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, [page, selectedSkills, setLoading, setError]);
+  }, [page, selectedSkills, selectedSalaryRange, setLoading, setError]);
 
   if (error) {
     return showError();
@@ -38,12 +41,14 @@ const Home = () => {
       <div className="layout">
         <Filter
           selectedSkills={selectedSkills}
+          selectedSalaryRange={selectedSalaryRange}
           setSelectedSkills={setSelectedSkills}
+          setSelectedSalaryRange={setSelectedSalaryRange}
         />
         <div className={`posts-grid ${posts.length === 0 ? "center" : ""}`}>
           {posts.length > 0 ? (
             posts.map((post) => <PostCard key={post.id} post={post} />)
-          ) : (
+          ) : loading ? null : (
             <NotFound />
           )}
         </div>

@@ -4,6 +4,7 @@ import "./PostCard.css";
 
 export default function PostCard({ post }) {
   const [isApplied, setIsApplied] = React.useState(false);
+
   return (
     <div className="container">
       <div className="content">
@@ -22,7 +23,7 @@ export default function PostCard({ post }) {
           </div>
           <button
             className={`apply ${isApplied ? "applied" : ""}`}
-            onClick={() => setIsApplied(true)}
+            onClick={() => setIsApplied(!isApplied)}
           >
             Apply
           </button>

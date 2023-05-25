@@ -1,19 +1,34 @@
 import jobs from "../data/jobpost.json";
 
-function filterJobsWithSkills(selectedSkills) {
-  return jobs.filter((job) => {
+function filterJobsWithSalaryRange(selectedSalaryRange) {
+  return jobs.filter(
+    ({ salary }) =>
+      salary >= selectedSalaryRange[0] && salary <= selectedSalaryRange[1]
+  );
+}
+
+function filterJobsWithSkills(selectedSkills, filteredJobs) {
+  return filteredJobs.filter((job) => {
     return selectedSkills.every((skill) => job.skills.includes(skill));
   });
 }
 
-export const getJobs = (page = 1, selectedSkills = [], size = 8) => {
+export const getJobs = (
+  page = 1,
+  selectedSkills = [],
+  selectedSalaryRange = [],
+  size = 8
+) => {
   return new Promise((resolve) => {
     let start = page * size - size;
     let end = page * size;
     let filteredJobs = jobs;
 
+    if (selectedSalaryRange.length > 0) {
+      filteredJobs = filterJobsWithSalaryRange(selectedSalaryRange);
+    }
     if (selectedSkills.length > 0) {
-      filteredJobs = filterJobsWithSkills(selectedSkills);
+      filteredJobs = filterJobsWithSkills(selectedSkills, filteredJobs);
     }
 
     let total = Math.ceil(filteredJobs.length / size);

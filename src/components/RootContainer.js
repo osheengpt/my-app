@@ -13,7 +13,7 @@ function RootContainer() {
     <div className="app">
       <Navbar />
       <Routes>
-        <Route element={<ProtectRoute />}>
+        <Route path="/" element={<ProtectRoute />}>
           <Route path="/freelancer" element={<FreelancerHome />} />
           <Route path="/employer" element={<EmployerHome />} />
         </Route>

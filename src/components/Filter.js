@@ -1,9 +1,15 @@
 import React from "react";
+import Slider from "@material-ui/core/Slider";
 import { useLoadingHandler, useErrorHandler } from "../hooks";
 import { getSkills } from "../services/jobServices";
 import "./Filter.css";
 
-export default function Filter({ selectedSkills, setSelectedSkills }) {
+export default function Filter({
+  selectedSalaryRange,
+  setSelectedSalaryRange,
+  selectedSkills,
+  setSelectedSkills,
+}) {
   const [skills, setSkills] = React.useState([]);
   const { loading, setLoading } = useLoadingHandler();
   const { error, setError, showError } = useErrorHandler();
@@ -11,16 +17,16 @@ export default function Filter({ selectedSkills, setSelectedSkills }) {
   React.useEffect(() => {
     setLoading(true);
     getSkills()
-      .then((res) => {
-        setSkills(res);
+      .then((skills) => {
+        setSkills(skills);
       })
       .catch(setError)
       .finally(() => {
         setLoading(false);
       });
-  }, [setLoading, setError]);
+  }, [setLoading, setError, setSelectedSalaryRange]);
 
-  const handleCheck = (e) => {
+  const handleSkillChange = (e) => {
     var updatedSkills = [...selectedSkills];
     if (e.target.checked) {
       updatedSkills = [...updatedSkills, e.target.value];
@@ -28,6 +34,10 @@ export default function Filter({ selectedSkills, setSelectedSkills }) {
       updatedSkills.splice(updatedSkills.indexOf(e.target.value), 1);
     }
     setSelectedSkills(updatedSkills);
+  };
+
+  const handleSalaryRangeChange = (e, newSalaryRange) => {
+    setSelectedSalaryRange(newSalaryRange);
   };
 
   if (error) {
@@ -43,10 +53,28 @@ export default function Filter({ selectedSkills, setSelectedSkills }) {
       ) : (
         skills.map((skill, i) => (
           <div className="checkbox" key={i}>
-            <input type="checkbox" value={skill} onChange={handleCheck} />
+            <input type="checkbox" value={skill} onChange={handleSkillChange} />
             <span>{skill}</span>
           </div>
         ))
+      )}
+      <h4>Salary Per Hour</h4>
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <>
+          <Slider
+            value={selectedSalaryRange}
+            onChange={handleSalaryRangeChange}
+            valueLabelDisplay="auto"
+            min={0}
+            max={50000}
+          />
+          <p>
+            Your range of salary is ₹ {selectedSalaryRange[0]} to ₹{" "}
+            {selectedSalaryRange[1]}
+          </p>
+        </>
       )}
     </div>
   );
