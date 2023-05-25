@@ -6,22 +6,21 @@
     background-color: var(--header);
 }
 
-.logo img {
-    object-fit: cover;
-    width: 215px;
-    margin-left: 32px;
-    margin-top: 50px;
+.header .title {
+    color: white;
+    margin-left: 20px;
 }
 
 .header-menu {
     margin-right: 10px;
-    border-left: 1px solid var(--light);
     display: flex;
 }
 
-.header-menu a{
+.header-menu > a{
     color: var(--light);
     font-family: sans-serif;
     padding: 20px 30px;
     font-size: 20px;
+    border-left: 1px solid var(--light);
+    text-decoration: none;
 }

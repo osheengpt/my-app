@@ -4,6 +4,7 @@ import {
   validateUser,
   setAuthInLocal,
   removeAuthInLocal,
+  removePostedJobsInLocal,
 } from "../utils/helper";
 
 const useAuthHandler = (initialState) => {
@@ -24,6 +25,7 @@ const useAuthHandler = (initialState) => {
 
   const removeUserAuth = () => {
     removeAuthInLocal();
+    // removePostedJobsInLocal();
     setAuth(null);
   };
 

@@ -1,3 +1,5 @@
+export const SKILL_TAGS = ["JavaScript", "Python", "AWS", "Ruby", "C++", "SQL"];
+
 export const DEFAULT_USER_AUTH = {
   freelancer: [
     {

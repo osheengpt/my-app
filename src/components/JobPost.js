@@ -1,10 +1,8 @@
 import React from "react";
 import Pic from "../images/job-post.jpeg";
-import "./PostCard.css";
+import "./JobPost.css";
 
-export default function PostCard({ post }) {
-  const [isApplied, setIsApplied] = React.useState(false);
-
+export default function JobPost({ post }) {
   return (
     <div className="container">
       <div className="content">
@@ -13,23 +11,19 @@ export default function PostCard({ post }) {
         </div>
         <div className="right-content">
           <div className="details">
-            <span className="position">{post?.position}</span>
+            <span className="position">{post?.title}</span>
             <span className="company">{post?.company} Compnay</span>
             <span className="sub-detail">₹ {post?.salary} / Hour</span>
-            <span className="sub-detail">📍 {post?.location}</span>
             <span className="sub-detail" style={{ fontWeight: "bold" }}>
               {post?.skills.join(", ")}
             </span>
           </div>
-          <button
-            className={`apply ${isApplied ? "applied" : ""}`}
-            onClick={() => setIsApplied(!isApplied)}
-          >
-            Apply
-          </button>
+          <button className="apply">View Applications ➜</button>
         </div>
       </div>
-      <span className="date">Posted on: {post.postedOn}</span>
+      <span className="postedBy">
+        Posted By: {post.recruiterName}, {post.recruiterEmail}
+      </span>
     </div>
   );
 }

@@ -1,3 +1,16 @@
+import { SKILL_TAGS } from "./consts";
+
+export const filterTags = (searchTerm, selectedItems = []) => {
+  let serachText = searchTerm.toLowerCase();
+  return searchTerm
+    ? SKILL_TAGS.filter(
+        (text) =>
+          text.toLowerCase().startsWith(serachText) &&
+          !selectedItems.includes(text)
+      )
+    : SKILL_TAGS.filter((text) => !selectedItems.includes(text));
+};
+
 export const validateUser = (user, userAuth) =>
   user.email === userAuth.email && user.password === userAuth.password;
 
@@ -15,6 +28,22 @@ export const getAuthInLocal = () => {
     return JSON.parse(auth);
   }
   return null;
+};
+
+export const setPostedJobsInLocal = (postedJobs) => {
+  window.localStorage.setItem("PostedJobs", JSON.stringify(postedJobs));
+};
+
+export const removePostedJobsInLocal = () => {
+  window.localStorage.removeItem("PostedJobs");
+};
+
+export const getPostedJobsInLocal = () => {
+  const jobs = window.localStorage.getItem("PostedJobs");
+  if (jobs) {
+    return JSON.parse(jobs);
+  }
+  return [];
 };
 
 const isEmail = (email) => {

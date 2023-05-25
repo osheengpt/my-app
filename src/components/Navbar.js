@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { USER_TYPE } from "../utils/consts";
 import { useAuthContext } from "../hooks";
-import Logo from "../images/logo1.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -10,15 +10,17 @@ function Navbar() {
   return (
     <section className="navbar">
       <div className="header">
-        <div className="logo">
-          <Link to="/">
-            <img src={Logo} alt="Logo" />
-          </Link>
-        </div>
+        <h2 className="title">JOB - PORTAL</h2>
         {auth && (
           <div className="header-menu">
+            {auth.type === USER_TYPE.EMPLOYER && (
+              <>
+                <Link to="/postjob">POST JOB</Link>
+                <Link to="/employer">POSTED JOBS</Link>
+              </>
+            )}
             <Link to="/login" onClick={removeUserAuth}>
-              Logout
+              LOGOUT
             </Link>
           </div>
         )}

@@ -38,6 +38,7 @@ const Home = () => {
   return (
     <>
       {loading && showLoader()}
+      <h1 className="home-heading">JOB POSTS</h1>
       <div className="layout">
         <Filter
           selectedSkills={selectedSkills}
@@ -48,7 +49,7 @@ const Home = () => {
         <div className={`posts-grid ${posts.length === 0 ? "center" : ""}`}>
           {posts.length > 0 ? (
             posts.map((post) => <PostCard key={post.id} post={post} />)
-          ) : loading ? null : (
+          ) : (
             <NotFound />
           )}
         </div>
