@@ -23,7 +23,6 @@ function RootContainer() {
             <Route path="*" element={<NotFound />} />
           </Route>
           <Route path="/login" element={<Login />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </PostedJobsContextProvider>
     </div>
