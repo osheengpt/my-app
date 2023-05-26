@@ -10,6 +10,7 @@ import "./FreelancerHome.css";
 const Home = () => {
   const [posts, setPosts] = React.useState([]);
   const [selectedSkills, setSelectedSkills] = React.useState([]);
+  const [searchTerm, setSearchTerm] = React.useState("");
   const [selectedSalaryRange, setSelectedSalaryRange] = React.useState([
     0, 50000,
   ]);
@@ -20,7 +21,7 @@ const Home = () => {
 
   React.useEffect(() => {
     setLoading(true);
-    getJobs(page, selectedSkills, selectedSalaryRange)
+    getJobs(page, searchTerm, selectedSkills, selectedSalaryRange)
       .then((res) => {
         setTotal(res.total);
         setPosts(res.data);
@@ -29,7 +30,14 @@ const Home = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, [page, selectedSkills, selectedSalaryRange, setLoading, setError]);
+  }, [
+    page,
+    searchTerm,
+    selectedSkills,
+    selectedSalaryRange,
+    setLoading,
+    setError,
+  ]);
 
   if (error) {
     return showError();
@@ -41,6 +49,8 @@ const Home = () => {
       <h1 className="home-heading">JOB POSTS</h1>
       <div className="layout">
         <Filter
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
           selectedSkills={selectedSkills}
           selectedSalaryRange={selectedSalaryRange}
           setSelectedSkills={setSelectedSkills}

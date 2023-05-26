@@ -15,6 +15,7 @@ function filterJobsWithSkills(selectedSkills, filteredJobs) {
 
 export const getJobs = (
   page = 1,
+  searchTerm,
   selectedSkills = [],
   selectedSalaryRange = [],
   size = 8
@@ -29,6 +30,11 @@ export const getJobs = (
     }
     if (selectedSkills.length > 0) {
       filteredJobs = filterJobsWithSkills(selectedSkills, filteredJobs);
+    }
+    if (searchTerm) {
+      filteredJobs = filteredJobs.filter(({ company }) =>
+        company.startsWith(searchTerm)
+      );
     }
 
     let total = Math.ceil(filteredJobs.length / size);

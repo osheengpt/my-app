@@ -5,6 +5,8 @@ import { getSkills } from "../services/jobServices";
 import "./Filter.css";
 
 export default function Filter({
+  searchTerm,
+  setSearchTerm,
   selectedSalaryRange,
   setSelectedSalaryRange,
   selectedSkills,
@@ -40,6 +42,10 @@ export default function Filter({
     setSelectedSalaryRange(newSalaryRange);
   };
 
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
   if (error) {
     return showError();
   }
@@ -47,6 +53,12 @@ export default function Filter({
   return (
     <div className="filter-grid">
       <span className="heading">🔍 Refine Job Search</span>
+      <input
+        type="text"
+        placeholder="Refine Job Search"
+        value={searchTerm}
+        onChange={handleSearch}
+      />
       <h4>Skill Set</h4>
       {loading ? (
         <div>Loading...</div>
